@@ -26,4 +26,3 @@ function calculateAndDisplay(fn) {
 }
 
 
- main
