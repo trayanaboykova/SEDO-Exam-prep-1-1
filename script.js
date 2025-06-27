@@ -10,6 +10,7 @@ function multiply(a, b) {
   return a * b;
 }
 
+
 function calculateAndDisplay(fn) {
   const rawA = document.getElementById('a').value;
   const rawB = document.getElementById('b').value;
@@ -24,7 +25,4 @@ function calculateAndDisplay(fn) {
   document.getElementById('result').textContent = fn(a, b);
 }
 
-['add', 'subtract', 'multiply'].forEach(op => {
-  document.getElementById(`btn-${op}`)
-    .addEventListener('click', () => calculateAndDisplay(window[op]));
-});
+
